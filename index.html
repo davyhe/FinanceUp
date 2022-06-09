@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Stock's Webpage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+</style>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<script src="scriptIndex.js"></script>
+
+<div class="jumbotron text-center jumbotron-fluid"></div>
+
+<nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto ">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="watch.html">Watchlist</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="articles.html">Articles</a>
+            </li>   
+            <li class="nav-item">
+                <a class="nav-link" href="research.html">Research</a>
+            </li>              
+            <li class="nav-item">
+                <a class="nav-link" href="crypto.html">Crypto</a>
+            </li>      
+            <li class="nav-item">
+                <a class="nav-link" href="forex.html">Forex</a>
+            </li>      
+            <li class="nav-item">
+                <a class="nav-link" href="learning.html">Learning</a>
+            </li>               
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <input type="button" value="Make Text Bigger" onclick="changeFontSize4()">
+            </li>               
+        </ul>
+    </div>  
+</nav>
+
+</body>
+
+<script src="script.js"></script>
+
+<center><h1 style="margin-block-start: 1em; margin-block-end: 1em; " >Welcome to FinanceUp!</h1></center>
+<p style="display: block; margin-inline-start: 50px; margin-inline-end: 50px;">We are dedicated to help you and your family reach financial stability through investing tips and general financial advice. If you are already financially secure, we offer our personal insights into which stocks we think will do well, as well as a personalized stock watchlist when you log in.</p>
+<p style="display: block; margin-inline-start: 50px; margin-inline-end: 50px;">If you're new to our website, you might want to check out the <a href="articles.html">articles page</a>. These are hand picked articles from trusted sources that are written to help improve your saving, spending, and investing habits.</p>
+<p style="display: block; margin-inline-start: 50px; margin-inline-end: 50px;">If you're a beginner to investing and the stock market, check out our <a href="learning.html">learning page</a> to learn about the basics of stocks and investing.</p>
+<p style="display: block; margin-inline-start: 50px; margin-inline-end: 50px;">Otherwise, feel free to browse around and learn about other forms of investing such as <a href="crypto.html">cryptocurrency</a> and the <a href="forex.html">foreign exchange market</a>. You may also log in and select certain stocks you're interested in. We will automatically send you notifications when we see any notable changes to your stocks in your watchlist.</p>
+
+<br>
+<div class="container">
+  <div class="column-left"><h1>Stock Market</h1>
+    <div id="1" class="homestock">
+        <div id = "AAPL">
+            Apple - $<AAPL></AAPL>
+        </div>
+        <br>
+        <div id = "NVDA">
+            Nvidia - $<NVDA></NVDA>
+        </div>
+        <br>
+        <div id = "MSFT">
+            Microsoft - $<MSFT></MSFT>
+        </div>         
+        <br>
+        <div id = "TSLA">
+            Tesla - $<TSLA></TSLA>
+        </div>         
+        <br>
+        <div id = "FB">
+            Meta - $<FB></FB>
+        </div> 
+    </div>
+  
+  </div>
+  
+  <div class="column-center"><h1>Crypto Market</h1>
+    <div id="2" class="homestock">
+        <div id = "BTC">
+            Bitcoin USD - $<BTC></BTC>
+        </div>        
+        <br> 
+        <div id = "ETH">
+            Ethereum USD - $<ETH></ETH>
+        </div>        
+        <br> 
+        <div id = "LTC">
+            Litecoin USD - $<LTC></LTC>
+        </div>        
+        <br> 
+        <div id = "XLM">
+            Stellar USD - $<XLM></XLM>
+        </div>        
+        <br> 
+        <div id = "DOGE">
+            Dogecoin USD - $<DOGE></DOGE>
+        </div>                                       
+    </div>
+  
+  </div>
+  
+  <div class="column-right"><h1>Forex Market</h1>
+    <div id="3" class="homestock">
+        <div id = "EURUSD">
+            EUR/USD Rates - <EURUSD></EURUSD>
+        </div>
+        <br>
+        <div id = "GBPUSD">
+            GBP/USD Rates - <GBPUSD></GBPUSD>
+        </div>
+        <br>
+        <div id = "USDJPY">
+            USD/JPY Rates - <USDJPY></USDJPY>
+        </div>
+        <br>       
+        <div id = "AUDUSD">
+            AUD/USD Rates - <AUDUSD></AUDUSD>
+        </div>
+        <br>        
+        <div id = "USDCAD">
+            USD/CAD Rates - <USDCAD></USDCAD>
+        </div>
+    </div>
+  </div>
+</div>
+
+<h1 id="4" style="text-align: center; font-size: 25px; height: px;" >
+ <br>
+ <br>
+ <div style="float: right; width: 30%;"></div>
+ <div style="display: inline-block; width: 40%;">We use data and stock analysis to help you understand your favorite stock within minutes, even
+    without any finance background.</div>
+  
+ <br>
+</h1>
+
+
+</html>
